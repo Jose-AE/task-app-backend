@@ -1,0 +1,9 @@
+POST http://localhost:3000/tasks/create HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "c9adaccd-a262-4fc5-af36-dc1236ea62a1",
+    "text": "my task szgfdgdfgdsa3",
+    "complete" : false,
+    "timestamp": 5000
+}
