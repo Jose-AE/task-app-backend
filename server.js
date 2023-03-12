@@ -7,6 +7,7 @@ const cors = require("cors");
 //constants
 const DB_URL = process.env.DB_ACCES_URL;
 const PORT = process.env.PORT || 3000;
+const FRONTEND_URL = process.env.FRONTEND_URL
 
 
 //Schemas models 
@@ -15,7 +16,7 @@ const Task = require("./models/Task");
 //create app
 const app = express();
 app.use(express.json());
-app.use(cors({origin:"http://localhost:5173"})); //allow client to acces api
+app.use(cors({origin:FRONTEND_URL})); //allow client to acces api
 
 
 
